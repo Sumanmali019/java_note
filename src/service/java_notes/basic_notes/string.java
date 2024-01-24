@@ -1,6 +1,4 @@
 package service.java_notes.basic_notes;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class string {
