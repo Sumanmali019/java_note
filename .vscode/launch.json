@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "person_object",
+            "request": "launch",
+            "mainClass": "service.java_notes.classes_objects.objects.person_object",
+            "projectName": "java_project_d909fb04"
+        },
+        {
+            "type": "java",
             "name": "object_class",
             "request": "launch",
             "mainClass": "service.java_notes.classes_objects.objects.object_class",
