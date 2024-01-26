@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "opps.Inheritance.main",
+            "projectName": "java_project_d909fb04"
+        },
+        {
+            "type": "java",
             "name": "Bank",
             "request": "launch",
             "mainClass": "opps.Bank",
