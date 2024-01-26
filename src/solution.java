@@ -1,33 +1,36 @@
+import java.util.Scanner;
+
 public class solution {
-    public boolean isPalindrome(int x) {
 
-        if (x < 0) {
-            return false;
+    public static void main(String[] arg) {
+
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        int[] number = new int[t];
+
+        for (int i = 0; i < t; i++) {
+            number[i] = sc.nextInt();
+        }
+        int maxNumber = findMaxNumber(number);
+
+        if (maxNumber % 2 == 0) {
+            System.out.print("WON");
+        } else {
+
+            System.out.println("LOSE");
         }
 
-        long r = 0;
-        long temp = x; 
-
-        while (temp != 0) {
-           int di = (int) (temp % 10);
-            r = r * 10 + di;
-            temp /= 10;
-        }
-        return (r == x);
     }
 
-    public static void main(String[] args) {
-        // Example usage
-        solution solution = new solution();
+    private static int findMaxNumber(int[] arr) {
 
-        // Test case 1: palindrome number
-        int palindromeNumber = 121;
-        boolean isPalindrome1 = solution.isPalindrome(palindromeNumber);
-        System.out.println(palindromeNumber + " is a palindrome: " + isPalindrome1);
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
 
-        // Test case 2: non-palindrome number
-        // int nonPalindromeNumber = 123;
-        // boolean isPalindrome2 = solution.isPalindrome(nonPalindromeNumber);
-        // System.out.println(nonPalindromeNumber + " is a palindrome: " + isPalindrome2);
     }
 }
