@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "opps.Interface.Main",
+            "projectName": "java_project_d909fb04"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "opps.Abstracts.Main",
             "projectName": "java_project_d909fb04"
         },
